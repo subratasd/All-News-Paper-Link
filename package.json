@@ -1,4 +1,6 @@
 {
+	"publishConfig": { "registry": "https://npm.pkg.github.com/" }
+	
     "private": true,
     "scripts": {
         "dev": "npm run development",
