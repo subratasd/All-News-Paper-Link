@@ -43,28 +43,84 @@
             <li class="nav-item {{ helper::set_active('allbanglanews') }}">
                 <a class="nav-link" href="{{route('allbanglanews')}}">
                     <i class="material-icons">view_agenda</i>
-                    <p>All Bangla News Link</p>
+                    <p>Bangla Daily Newspapers Link</p>
                 </a>
             </li>
 
-            <li class="nav-item {{ helper::set_active('alllocalnews') }}">
-                <a class="nav-link" href="{{route('alllocalnews')}}">
+            <li class="nav-item {{ helper::set_active('banglaonlin') }}">
+                <a class="nav-link" href="{{route('banglaonlin')}}">
                     <i class="material-icons">view_agenda</i>
-                    <p>All Local News Link</p>
+                    <p>Bangal Online news Portal Link</p>
                 </a>
             </li>
 
             <li class="nav-item {{ helper::set_active('allonlinetv') }}">
                 <a class="nav-link" href="{{route('allonlinetv')}}">
                     <i class="material-icons">view_agenda</i>
-                    <p>All Onlin TV Link</p>
+                    <p> Bangla TV Channel Link </p>
+                </a>
+            </li>
+
+            <li class="nav-item {{ helper::set_active('banglaenglish') }}">
+                <a class="nav-link" href="{{route('banglaenglish')}}">
+                    <i class="material-icons">view_agenda</i>
+                    <p>Bangladeshi English News Papers Link</p>
+                </a>
+            </li>
+
+            <li class="nav-item {{ helper::set_active('shearbazar') }}">
+                <a class="nav-link" href="{{route('shearbazar')}}">
+                    <i class="material-icons">view_agenda</i>
+                    <p>Share Bazar News papers Link</p>
+                </a>
+            </li>
+
+            <li class="nav-item {{ helper::set_active('alllocalnews') }}">
+                <a class="nav-link" href="{{route('alllocalnews')}}">
+                    <i class="material-icons">view_agenda</i>
+                    <p>Local News Papers Link</p>
+                </a>
+            </li>
+
+            <li class="nav-item {{ helper::set_active('westbengal') }}">
+                <a class="nav-link" href="{{route('westbengal')}}">
+                    <i class="material-icons">view_agenda</i>
+                    <p>West-Bengal News papers Link</p>
                 </a>
             </li>
 
             <li class="nav-item {{ helper::set_active('allenglishnews') }}">
                 <a class="nav-link" href="{{route('allenglishnews')}}">
                     <i class="material-icons">view_agenda</i>
-                    <p>All English News Link</p>
+                    <p>World News papers Link</p>
+                </a>
+            </li>
+
+            <li class="nav-item {{ helper::set_active('banglamagazin') }}">
+                <a class="nav-link" href="{{route('banglamagazin')}}">
+                    <i class="material-icons">view_agenda</i>
+                    <p>Bangla Magazine Link</p>
+                </a>
+            </li>
+
+            <li class="nav-item {{ helper::set_active('banglajob') }}">
+                <a class="nav-link" href="{{route('banglajob')}}">
+                    <i class="material-icons">view_agenda</i>
+                    <p>Bangla Job site Link</p>
+                </a>
+            </li>
+
+            <li class="nav-item {{ helper::set_active('banglatech') }}">
+                <a class="nav-link" href="{{route('banglatech')}}">
+                    <i class="material-icons">view_agenda</i>
+                    <p>Bangla Tech Site Link</p>
+                </a>
+            </li>
+
+            <li class="nav-item {{ helper::set_active('banglafm') }}">
+                <a class="nav-link" href="{{route('banglafm')}}">
+                    <i class="material-icons">view_agenda</i>
+                    <p>Bangla FM Radio</p>
                 </a>
             </li>
 

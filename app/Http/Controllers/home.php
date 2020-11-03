@@ -6,10 +6,18 @@ use App\Models\allbanglanews;
 use App\Models\allenglishnews;
 use App\Models\alllocalnews;
 use App\Models\allonlinetv;
+use App\Models\banglaenglish;
+use App\Models\banglafm;
+use App\Models\banglajob;
+use App\Models\banglamagazin;
+use App\Models\banglaonlin;
+use App\Models\banglatech;
+use App\Models\shearbazar;
 use App\Models\top10english;
 use App\Models\top10portal;
 use App\Models\top10tv;
 use App\Models\topbangla;
+use App\Models\westbangle;
 use Illuminate\Http\Request;
 
 
@@ -38,6 +46,15 @@ class home extends Controller
         $alllocalnews = alllocalnews::orderBy('sl', 'ASC')->take(50)->get();
         $allenglishnews = allenglishnews::orderBy('sl', 'ASC')->take(50)->get();
         $allonlintv = allonlinetv::orderBy('sl', 'ASC')->take(50)->get();
+        $banglaenglish = banglaenglish::orderBy('sl', 'ASC')->take(50)->get();
+        $shearbazar = shearbazar::orderBy('sl', 'ASC')->take(50)->get();
+        $westbengl = westbangle::orderBy('sl', 'ASC')->take(50)->get();
+        $banglamagazin = banglamagazin::orderBy('sl', 'ASC')->take(50)->get();
+        $banglajob = banglajob::orderBy('sl', 'ASC')->take(50)->get();
+        $banglatech = banglatech::orderBy('sl', 'ASC')->take(50)->get();
+        $banglafm = banglafm::orderBy('sl', 'ASC')->take(50)->get();
+        $banglaonlin = banglaonlin::orderBy('sl', 'ASC')->take(50)->get();
+
 
         return view('home',compact([
             $top10bangla, 'top10bangla',
@@ -47,7 +64,15 @@ class home extends Controller
             $allbanglanews, 'allbanglanews',
             $alllocalnews, 'alllocalnews',
             $allenglishnews, 'allenglishnews',
-            $allonlintv, 'allonlintv'
+            $allonlintv, 'allonlintv',
+            $banglaenglish, 'banglaenglish',
+            $shearbazar, 'shearbazar',
+            $westbengl, 'westbengl',
+            $banglamagazin, 'banglamagazin',
+            $banglajob, 'banglajob',
+            $banglatech, 'banglatech',
+            $banglafm, 'banglafm',
+            $banglaonlin, 'banglaonlin'
         ]));
     }
 
@@ -60,6 +85,10 @@ class home extends Controller
     }
     public function ucon(){
         return view('frontend.page.ucon');
+    }
+
+    public function job(){
+        return view('frontend.page.job');
     }
 
     public function corona(){

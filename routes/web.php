@@ -2,7 +2,15 @@
 
 use App\Http\Controllers\AlllocalnewsController;
 use App\Http\Controllers\AllonlinetvController;
+use App\Http\Controllers\BanglaenglishController;
+use App\Http\Controllers\BanglafmController;
+use App\Http\Controllers\BanglajobController;
+use App\Http\Controllers\BanglamagazinController;
+use App\Http\Controllers\BanglaonlinController;
+use App\Http\Controllers\BanglatechController;
+use App\Http\Controllers\ShearbazarController;
 use App\Http\Controllers\Top10englishController;
+use App\Http\Controllers\WestbangleController;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\home;
 use \App\Http\Controllers\TopbanglaController;
@@ -10,6 +18,7 @@ use \App\Http\Controllers\Top10tvController;
 use \App\Http\Controllers\Top10portalController;
 use \App\Http\Controllers\AllbanglanewsController;
 use \App\Http\Controllers\AllenglishnewsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +37,7 @@ Route::get('/', [home::class, 'home'])->name('home');
 Route::get('headline', [home::class, 'headline'])->name('headline');
 Route::get('world', [home::class, 'world'])->name('world');
 Route::get('ucon', [home::class, 'ucon'])->name('ucon');
+Route::get('job', [home::class, 'job'])->name('job');
 Route::get('corona', [home::class, 'corona'])->name('corona');
 Route::get('contact', [home::class, 'contact'])->name('contact');
 Route::post('contact', [home::class, 'store']);
@@ -87,6 +97,49 @@ Route::get('/top10bangla/{id}', [TopbanglaController::class, 'destroy'])->name('
     Route::get('/allenglishnews', [AllenglishnewsController::class, 'index'])->name('allenglishnews');
     Route::post('/allenglishnews', [AllenglishnewsController::class, 'store']);
     Route::get('/allenglishnews/{id}', [AllenglishnewsController::class, 'destroy'])->name('delete');
+
+    //Bangla English News link
+    Route::get('/banglaenglish', [banglaenglishController::class, 'index'])->name('banglaenglish');
+    Route::post('/banglaenglish', [banglaenglishController::class, 'store']);
+    Route::get('/banglaenglish/{id}', [banglaenglishController::class, 'destroy'])->name('delete');
+
+    // Shear Bazar News link
+    Route::get('/shearbazar', [ShearbazarController::class, 'index'])->name('shearbazar');
+    Route::post('/shearbazar', [ShearbazarController::class, 'store']);
+    Route::get('/shearbazar/{id}', [ShearbazarController::class, 'destroy'])->name('delete');
+
+
+    // Shear Bazar News link
+    Route::get('/westbengal', [WestbangleController::class, 'index'])->name('westbengal');
+    Route::post('/westbengal', [WestbangleController::class, 'store']);
+    Route::get('/westbengal/{id}', [WestbangleController::class, 'destroy'])->name('delete');
+
+
+    // Bangla Onlin News link
+    Route::get('/banglaonlin', [BanglaonlinController::class, 'index'])->name('banglaonlin');
+    Route::post('/banglaonlin', [BanglaonlinController::class, 'store']);
+    Route::get('/banglaonlin/{id}', [BanglaonlinController::class, 'destroy'])->name('delete');
+
+
+    // Bangla Magazine link
+    Route::get('/banglamagazin', [BanglamagazinController::class, 'index'])->name('banglamagazin');
+    Route::post('/banglamagazin', [BanglamagazinController::class, 'store']);
+    Route::get('/banglamagazin/{id}', [BanglamagazinController::class, 'destroy'])->name('delete');
+
+    // Bangla Job link
+    Route::get('/banglajob', [BanglajobController::class, 'index'])->name('banglajob');
+    Route::post('/banglajob', [BanglajobController::class, 'store']);
+    Route::get('/banglajob/{id}', [BanglajobController::class, 'destroy'])->name('delete');
+
+    // Bangla Tech Site Link
+    Route::get('/banglatech', [BanglatechController::class, 'index'])->name('banglatech');
+    Route::post('/banglatech', [BanglatechController::class, 'store']);
+    Route::get('/banglatech/{id}', [BanglatechController::class, 'destroy'])->name('delete');
+
+    // Bangla FM Radio
+    Route::get('/banglafm', [BanglafmController::class, 'index'])->name('banglafm');
+    Route::post('/banglafm', [BanglafmController::class, 'store']);
+    Route::get('/banglafm/{id}', [BanglafmController::class, 'destroy'])->name('delete');
 });
 
 

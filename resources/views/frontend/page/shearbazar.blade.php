@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="header-title mb-3">
-        <h3 class="">World News papers Link</h3>
+        <h3 class="">Share Bazar News papers Link</h3>
     </div>
     <div class="col-md-12">
         <div class="row">
-            @foreach($allenglishnews as $alltv)
+            @foreach($shearbazar as $alltv)
 
                 <div class="mb-3 col-md-2">
                     <a href="{{$alltv->link}}" target="_blank">

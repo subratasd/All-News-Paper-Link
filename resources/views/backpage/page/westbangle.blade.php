@@ -1,5 +1,5 @@
 @extends('backpage.leyout.main')
-@section('title', 'All Bangla News Link')
+@section('title', 'West Bengal News Link')
 @section('content')
 
 <div class="row">
@@ -7,7 +7,7 @@
     <div class="col-md-8">
         <div class="card">
             <div class="card-header card-header-primary">
-                <h4 class="card-title">Bangla Daily Newspapers Link</h4>
+                <h4 class="card-title">@yield('title')</h4>
                 <p class="card-category">Add now</p>
             </div>
             <div class="card-body">
@@ -132,7 +132,7 @@
                             <td>
                                 <a href="" class="btn btn-facebook">Edit</a>
 
-                                <a href="allbanglanews/{{$data->id}}" type="submit" class="btn btn-danger">Delete</a>
+                                <a href="westbengal/{{$data->id}}" type="submit" class="btn btn-danger">Delete</a>
 
                             </td>
 

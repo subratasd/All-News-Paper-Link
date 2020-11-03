@@ -44,6 +44,10 @@
             <a class="nav-link" href="{{route('corona')}}"> Corona Update <span class="sr-only">(current)</span></a>
             </li>
 
+            <li class="nav-item {{ helper::set_active('job') }} ">
+                <a class="nav-link" href="{{route('job')}}"> চাকরির খবর <span class="sr-only">(current)</span></a>
+            </li>
+
             <li class="nav-item {{ helper::set_active('contact') }} ">
                 <a class="nav-link" href="{{route('contact')}}">যোগাযোগ করুন <span class="sr-only">(current)</span></a>
             </li>

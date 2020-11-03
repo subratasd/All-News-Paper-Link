@@ -111,9 +111,21 @@
     </div>
 
 @include('frontend.page.allbangla')
+@include('frontend.page.banglaonline')
 @include('frontend.page.alllocalnews')
+@include('frontend.page.banglaenglish')
+@include('frontend.page.shearbazar')
 @include('frontend.page.allonlinetv')
+@include('frontend.page.westBengle')
 @include('frontend.page.allenglishnews')
+@include('frontend.page.banglamagazin')
+@include('frontend.page.banglajob')
+@include('frontend.page.banglatech')
+@include('frontend.page.banglafm')
+
+
+
+
 
 
 

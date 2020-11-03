@@ -1,5 +1,5 @@
 @extends('backpage.leyout.main')
-@section('title', 'All Local News link')
+@section('title', 'Local News link')
 @section('content')
 
 <div class="row">

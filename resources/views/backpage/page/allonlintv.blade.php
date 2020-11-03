@@ -1,5 +1,5 @@
 @extends('backpage.leyout.main')
-@section('title', 'All Online Tv link')
+@section('title', 'Bangla TV Channel Link')
 @section('content')
 
 <div class="row">

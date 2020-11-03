@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="header-title mb-3">
-        <h3 class="">All Bangladeshi News Link</h3>
+        <h3 class="">Bangla Daily Newspapers Link</h3>
     </div>
     <div class="col-md-12">
         <div class="row">
